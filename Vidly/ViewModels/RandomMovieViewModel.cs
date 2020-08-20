@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Vidly.Customers;
 using Vidly.Models;
 
 namespace Vidly.ViewModels
