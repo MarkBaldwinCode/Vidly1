@@ -10,11 +10,20 @@ namespace Vidly.Controllers
 {
     public class CustomersController : Controller
     {
-        // GET: Customer
-        public ActionResult myCustomer()
+        //GET: /Customers/
+
+        public ActionResult Index()
         {
-            var customer = new Customer() { Name = "John Smith" };
             return View();
+        }
+
+    
+        // GET: /Customers/currentCustomer/
+
+        public string currentCustomer()
+        {
+            //var customer = new Customer() { Name = "John Smith" };
+            return "This is John Smith";
         }
     }
 }
