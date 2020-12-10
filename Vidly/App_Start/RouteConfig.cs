@@ -16,6 +16,19 @@ namespace Vidly
             routes.MapMvcAttributeRoutes();
 
             routes.MapRoute(
+                name: "Test",
+                url: "test/{id}",
+                defaults: new {controller = "Test", action = "Index"}
+                );
+
+            routes.MapRoute(
+
+                name: "Customers",
+                url: "customers/{id}" , 
+                defaults: new { controller = "Customers", action = "Index" }
+                );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
